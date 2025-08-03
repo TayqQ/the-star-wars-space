@@ -1460,6 +1460,12 @@ h1 {
     color: white;
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
 p {
     color: white;
 }
@@ -1520,6 +1526,13 @@ p {
     padding: 30px;
     position: relative;
     overflow: hidden;
+    margin-inline: 15px;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        padding: 15px;
+    }
 }
 
 .content-container::before {
@@ -1630,4 +1643,8 @@ p {
         0 0 20px rgba(255, 255, 255, 0.4),
         inset 0 0 30px rgba(0, 0, 0, 0.6),
         0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+img {
+    width: 100%;
 }
